@@ -33,6 +33,7 @@ public class Topological_Sort_DFS {
         for(int i = 0;i<N;i++) {
             if(vis[i] == 0) {
                 findTopoSort(i, vis, adj, st);
+		 
             }
         }
         
@@ -54,3 +55,5 @@ public class Topological_Sort_DFS {
 	        st.push(node); 
 	    }
 }
+
+// NOTE:-The time complexity of the algorithm used is O(V+E) because DFS has to visit all the edges of the graph to create a topological order containing all vertices of the graph.
