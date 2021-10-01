@@ -32,7 +32,9 @@ public class Dijkstra_shortestPath_Undirected_Graphs_withWeights {
 				
 			adj.get(0).add(new Node(1, 2));
 			adj.get(1).add(new Node(0, 2));
-			
+
+// time complexity
+// Θ (E+V^2) 
 			adj.get(1).add(new Node(2, 4));
 			adj.get(2).add(new Node(1, 4));
 			
